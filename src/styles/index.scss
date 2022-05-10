@@ -1,0 +1,15 @@
+// fonts
+@font-face {
+    font-family: "ApfelGrotezk-Regular";
+    src: url("/src/assets/typefaces/ApfelGrotezk-Regular.woff2") format("woff2");
+}
+
+// variables
+$backgroundColor: #111111;
+$textColorPrimary: #f2f2f2;
+
+body {
+    background: $backgroundColor;
+    color: $textColorPrimary;
+    font-family: ApfelGrotezk-Regular;
+}
