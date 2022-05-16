@@ -77,13 +77,23 @@ nav {
 }
 
 // pages
-
 .pageContainer {
     align-items: center;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+
+    a {
+        color: $textColorPrimary;
+        text-decoration: none; 
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+            filter: blur(1px);
+        }
+    }
 
     .pageHeader {
         font-size: 3em;
@@ -93,4 +103,43 @@ nav {
         padding: 1em;
         text-align: justify;
     }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .bioImg {
+        width: 50%;
+    }
+
+    .mainDivPageContentAbout {
+        line-height: 1.3em;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+        width: 50%;
+
+        .shortBioDetails, .bioStatement, .educationDetails, .enquiriesDetails {
+            margin-bottom: 2em;
+        }
+
+        .shortBioDetailsText {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bioStatementText, .educationDetailsText {
+            margin-bottom: 2em;
+            margin-top: -0.6em;
+        }  
+
+        .educationDetailsText {
+            margin-bottom: 0.7em;
+        }
+
+        .enquiriesTitle {
+            margin-bottom: -0.025em;
+        }
+    }
+    
 }
