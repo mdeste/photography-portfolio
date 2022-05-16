@@ -39,30 +39,31 @@ nav {
     .navbarListItemName {
         background-color: $textColorPrimary;
         border-radius: 40px;
-        box-shadow: 0 0 0 2.8px white; 
+        box-shadow: 0 0 0 2.8px $textColorPrimary; 
         color: $backgroundColor;
         padding: 3px 20px 5px 20px;
-        text-decoration: none;      
+        text-decoration: none;    
+        
+        &:visited {
+            border-radius: 40px;  
+            box-shadow: 0 0 0 2.8px $textColorPrimary; 
+            color: $textColorPrimary;
+            padding: 3px 20px 5px 20px;
+            text-decoration: none;
+        }
+    
+        &:hover {
+            background-color: $backgroundColor;
+            border-radius: 40px;
+            box-shadow: 0 0 0 2.8px $backgroundColor; 
+            color: $textColorPrimary;
+            filter: blur(1px);
+            padding: 3px 20px 5px 20px;
+            text-shadow: 0 0 2.5px rgba(255, 255, 255, 1);  
+        }
+    
     }
-
-    .navbarListItemName:visited {
-        border-radius: 40px;  
-        box-shadow: 0 0 0 2.8px white; 
-        color: $textColorPrimary;
-        padding: 3px 20px 5px 20px;
-        text-decoration: none;
-    }
-
-    .navbarListItemName:hover {
-        background-color: $backgroundColor;
-        border-radius: 40px;
-        box-shadow: 0 0 0 2.8px $backgroundColor; 
-        color: $textColorPrimary;
-        filter: blur(1px);
-        padding: 3px 20px 5px 20px;
-        text-shadow: 0 0 2.5px rgba(255, 255, 255, 1);  
-    }
-
+    
     .navbarListItemNameActive {
         background-color: $backgroundColor;
         border-radius: 40px;
