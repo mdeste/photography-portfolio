@@ -11,7 +11,7 @@ function Navbar() {
     }
 
   return (
-      <>
+    <>
     <nav className="navbarNav">
         <ul className="navbarListItemsContainer">
             <li className="navbarListItem" onClick={() => navigate('/')}>
