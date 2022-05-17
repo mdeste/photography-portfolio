@@ -16,16 +16,16 @@ $breakpointMobile: 900px;
 // width
 ::-webkit-scrollbar {
     width: 0.2em;
-  }
-  
+}
+
 // track
 ::-webkit-scrollbar-track {
     background: #111111;
 }
-  
+
 // handle
 ::-webkit-scrollbar-thumb {
-   background: #ffffff;
+    background: #ffffff;
 }
 
 // handle hover
@@ -33,6 +33,7 @@ $breakpointMobile: 900px;
     background: rgba(255, 255, 255, 1);
 }
 
+// body, html styling
 body {
     background: $backgroundColor;
     color: $textColorPrimary;
@@ -68,35 +69,34 @@ nav {
     .navbarListItemName {
         background-color: $textColorPrimary;
         border-radius: 40px;
-        box-shadow: 0 0 0 2.8px $textColorPrimary; 
+        box-shadow: 0 0 0 2.8px $textColorPrimary;
         color: $backgroundColor;
         padding: 3px 20px 5px 20px;
-        text-decoration: none;    
-        
+        text-decoration: none;
+
         &:visited {
-            border-radius: 40px;  
-            box-shadow: 0 0 0 2.8px $textColorPrimary; 
+            border-radius: 40px;
+            box-shadow: 0 0 0 2.8px $textColorPrimary;
             color: $textColorPrimary;
             padding: 3px 20px 5px 20px;
             text-decoration: none;
         }
-    
+
         &:hover {
             background-color: $backgroundColor;
             border-radius: 40px;
-            box-shadow: 0 0 0 2.8px $backgroundColor; 
+            box-shadow: 0 0 0 2.8px $backgroundColor;
             color: $textColorPrimary;
             filter: blur(1px);
             padding: 3px 20px 5px 20px;
-            text-shadow: 0 0 2.5px rgba(255, 255, 255, 1);  
+            text-shadow: 0 0 2.5px rgba(255, 255, 255, 1);
         }
-    
     }
-    
+
     .navbarListItemNameActive {
         background-color: $backgroundColor;
         border-radius: 40px;
-        box-shadow: 0 0 0 2.8px $backgroundColor; 
+        box-shadow: 0 0 0 2.8px $backgroundColor;
         color: $textColorPrimary;
         filter: blur(1px);
         padding: 3px 20px 5px 20px;
@@ -109,68 +109,65 @@ nav {
 }
 
 label {
-	display: flex;
-	right: -35px;
-	outline: none;
-	transform: scale(0.5);
-	position: absolute;
-	margin: -18px 25px 10px 10px;
-	padding: 0px;
+    display: flex;
+    margin: -18px 25px 10px 10px;
+    outline: none;
+    padding: 0px;
+    position: absolute;
+    right: -35px;
+    transform: scale(0.5);
 }
 
 .hamburger {
-	position: absolute;
-	overflow: hidden;
-}
-
-.hamburger {
-  background-color: transparent;	
-  border: none;
-  cursor: pointer;
-  display: none;
-  overflow: hidden;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    overflow: hidden;
 }
 
 .line {
-  fill: none;
-  stroke: $textColorPrimary;
-  stroke-width: 6.25px;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: none;
+    stroke: $textColorPrimary;
+    stroke-width: 6.25px;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line1 {
-	stroke-dasharray: 69 224;
-	stroke-width: 6.25px;
-	stroke-dashoffset: 0;
+    stroke-dasharray: 69 224;
+    stroke-dashoffset: 0;
+    stroke-width: 6.25px;
 }
 
 .line2 {
-	stroke-dasharray: 69 69;
-	stroke-width: 6.25px;
-	stroke-dashoffset: 0;
+    stroke-dasharray: 69 69;
+    stroke-dashoffset: 0;
+    stroke-width: 6.25px;
 }
 
 .line3 {
-	stroke-dasharray: 69 211;
-	stroke-width: 6.25px;
-	stroke-dashoffset: 0;
+    stroke-dasharray: 69 211;
+    stroke-dashoffset: 0;
+    stroke-width: 6.25px;
 }
 
 .opened .line1 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -161.35;
-  stroke-width: 6.25px;
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -161.35;
+    stroke-width: 6.25px;
 }
+
 .opened .line2 {
-  stroke-dasharray: 1 69;
-  stroke-dashoffset: -30;
-  stroke-width: 6.25px;
+    stroke-dasharray: 1 69;
+    stroke-dashoffset: -30;
+    stroke-width: 6.25px;
 }
+
 .opened .line3 {
-  stroke-dasharray: 90 211;
-  stroke-dashoffset: -148;
-  stroke-width: 6.25px;
+    stroke-dasharray: 90 211;
+    stroke-dashoffset: -148;
+    stroke-width: 6.25px;
 }
 
 @media (max-width: $breakpointMobile) {
@@ -186,24 +183,22 @@ label {
         display: flex;
     }
 
-    ul { 
+    ul {
+        background-color: $backgroundColor;
         display: flex;
         flex-direction: column;
+        height: 100%;
         position: absolute;
         top: 2em;
         width: 100%;
-        height: 100%;
-        background-color: $backgroundColor;
-        -webkit-backdrop-filter: blur(3.5px);
-	    backdrop-filter: blur(3.5px);
     }
 
-    li { 
-        z-index: 999999;
+    li {
+        align-self: flex-end;
         position: relative;
         right: 5%;
         top: -32.5%;
-        align-self: flex-end;
+        z-index: 999999;
     }
 }
 
@@ -218,7 +213,7 @@ label {
 
     a {
         color: $textColorPrimary;
-        text-decoration: none; 
+        text-decoration: none;
         margin: 0;
         padding: 0;
 
@@ -244,7 +239,10 @@ label {
         line-height: 1.3em;
         width: 80%;
 
-        .shortBioDetails, .bioStatement, .educationDetails, .enquiriesDetails {
+        .shortBioDetails,
+        .bioStatement,
+        .educationDetails,
+        .enquiriesDetails {
             margin-bottom: 2em;
         }
 
@@ -253,10 +251,11 @@ label {
             padding: 0;
         }
 
-        .bioStatementText, .educationDetailsText {
+        .bioStatementText,
+        .educationDetailsText {
             margin-bottom: 2em;
             margin-top: -0.6em;
-        }  
+        }
 
         .educationDetailsText {
             margin-bottom: 0.7em;
@@ -266,5 +265,5 @@ label {
             margin-bottom: -0.025em;
         }
     }
-    
+
 }

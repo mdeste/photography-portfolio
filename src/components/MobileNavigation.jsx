@@ -5,16 +5,17 @@ const MobileNavigation = () => {
     const [open, setOpen] = useState(false)
 
     const toggleClass = (e) => {
-        e.currentTarget.classList.toggle('opened')
         setOpen(!open)
     } 
 
-    const closeMobileMenu = () => setOpen(false)
+    const closeMobileMenu = (e) => {
+        setOpen(false)
+    }
 
     return (
         <nav className="navbarMobileNav">
             {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
-            <label className="hamburger" for="hamburgerMenu" onClick={toggleClass}>
+            <label className={open ? "opened hamburger" : "hamburger"} onClick={toggleClass}>
                 <svg width="100" height="100" viewBox="0 0 100 100">
 					<path className="line line1" 
                         d="M20,30.95c6.932,-7.933 13.653,-11.9 20.164,-11.9c3.044,-0 7.166,1.795 12.365,5.385c5.199,3.591 9.134,5.386 11.804,5.386c4.824,0 10.046,-3.359 15.667,-10.076c-0,-0 1.543,4.397 3.673,10.759c4.663,13.928 12.141,37.268 12.416,44.496c0.236,6.222 -9.316,11.011 -13.69,7.92c-11.242,-7.943 -53.761,-55.581 -53.761,-55.581" />
