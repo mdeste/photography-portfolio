@@ -35,21 +35,24 @@ const NavLinks = (props) => {
             initial={animateFrom}
             animate={animateTo}
             transition={{delay: 0.05}}
-            className="navbarListItem" onClick={navLink1}>
+            className="navbarListItem" 
+            onClick={navLink1}>
                 <p className={pathMatchRoute('/') ? 'navbarListItemNameActive' : 'navbarListItemName'} >Work In Progress</p>  
             </motion.li>
             <motion.li 
             initial={animateFrom}
             animate={animateTo}
             transition={{delay: 0.10}}
-            className="navbarListItem" onClick={navLink2}>
+            className="navbarListItem" 
+            onClick={navLink2}>
                 <p className={pathMatchRoute('/projects') ? 'navbarListItemNameActive' : 'navbarListItemName'}>Projects</p>
             </motion.li>
             <motion.li 
             initial={animateFrom}
             animate={animateTo}
             transition={{delay: 0.20}}
-            className="navbarListItem" onClick={navLink3}>
+            className="navbarListItem" 
+            onClick={navLink3}>
                 <p className={pathMatchRoute('/about') ? 'navbarListItemNameActive' : 'navbarListItemName'}>About</p>
             </motion.li>
         </ul>
