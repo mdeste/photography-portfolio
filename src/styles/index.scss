@@ -217,12 +217,7 @@ label {
 }
 
 @media (max-width: $breakpointMobile) {
-    .recentWorkImgLandscape {
-        height: auto;
-        width: 85%;
-    }
-
-    .recentWorkImgPortrait {
+    .recentWorkImgLandscape, .recentWorkImgPortrait {
         height: auto;
         width: 85%;
     }
@@ -252,20 +247,21 @@ label {
         font-size: 3em;
     }
 
-    .mainDivPageContent {
-        padding: 1em;
-        text-align: justify;
-    }
-
     h1 {
         font-size: 1em;
     }
 
+    .mainDivPageContentProject {
+        line-height: 1.3em;
+        width: 50%;
+    }
+
     .mainDivPageContentAbout {
         line-height: 1.3em;
-        width: 80%;
+        width: 50%;
+    }
 
-        .shortBioDetails,
+    .shortBioDetails,
         .bioStatement,
         .educationDetails,
         .enquiriesDetails {
@@ -290,7 +286,6 @@ label {
         .enquiriesTitle {
             margin-bottom: -0.025em;
         }
-    }
 
     .projectWrapper {
         display: flex;
@@ -328,4 +323,42 @@ label {
             }
         }
     }
+
+    .projectImgWrapper {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .projectImgLandscape {
+            height: auto;
+            margin-bottom: 2.5em;
+            width: 100%;
+        }
+    
+        .projectImgPortrait {
+            height: auto;
+            margin-bottom: 2.5em;
+            width: 65%;
+        }
+    
+        @media (max-width: $breakpointMobile) {
+            .projectImgPortrait {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .mainDivPageContentProject {
+            width: 85%;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .mainDivPageContentAbout {
+            width: 85%;
+        }
+    }
+    
 }

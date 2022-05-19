@@ -13,7 +13,7 @@ function Projects() {
         <div className="imgWrapper" onClick={() => navigate("/fourphotographs")}>
           <img 
           src={fourPhotographs3} 
-          alt="" 
+          alt="A path is cut through the earth, zig-zagging across the bottom half of the frame and into the distance under a cloudless expanse of grey sky" 
           className="projectsImg"  />
           <div className="captionWrapper">
             <figcaption className="imgCaption">Print Series, 2021</figcaption>
@@ -23,7 +23,7 @@ function Projects() {
         <div className="imgWrapper" onClick={() => navigate("/todivertwater")}>
           <img 
           src={toDivertWater3} 
-          alt="" 
+          alt="Silhouetted trees line the right edge and the bottom of the frame, against the bright starry backdrop of the night sky" 
           className="projectsImg" />
           <div className="captionWrapper">
             <figcaption className="imgCaption">Publication, 2020</figcaption>
@@ -33,7 +33,7 @@ function Projects() {
         <div className="imgWrapper" onClick={() => navigate("/interiorexterior")}>
           <img 
           src={interiorExterior1} 
-          alt="" 
+          alt="A ladder drops into the sea from jagged black rocks under a hazy blue sky" 
           className="projectsImg" />
           <div className="captionWrapper">
             <figcaption className="imgCaption">Exhibition, 2019</figcaption>
