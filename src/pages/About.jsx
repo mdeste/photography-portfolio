@@ -16,13 +16,13 @@ function About() {
         <div className="bioStatement">
           <h1 className="statementTitle">Statement</h1>
           <p className="bioStatementText">
-            I work with still image, text and visual design employed across various presentation platforms—from self-published books and print series, to exhibitions and online-only projects. My artistic practice is informed by a research-based approach to the given subject matter, and I am always interested in collaborating with other creative practitioners. 
+            I work with still image, text and visual design employed across various presentation platforms—from self-published books and print series, to exhibitions and online-only projects.
           </p>
           <p className="bioStatementText">
             I am interested in the history and conceptualisation of landscape and interior photography, with a particular emphasis on the ideas of how narrative and temporality intersect with space, as well as the ways in which the "natural" and the "built" converge. In short, I'm fascinated by the way we construct and connect disparate stories around the different places we see and experience, how we try to fill in the blanks when presented with unfamiliar yet ordinary environments, and the ways in which the banal can be reconfigured by practice of photography.
           </p>
           <p className="bioStatementText">
-            When time permits, I also write exhibition reviews and have interviewed artists for a number of publications, most recently with <a href="https://corridor8.co.uk/" target="_blank" rel="noopener noreferrer">Corridor8</a>. You can follow the links below to read some of this work: 
+            When time permits, I also write exhibition reviews for a number of publications, most recently with <a href="https://corridor8.co.uk/" target="_blank" rel="noopener noreferrer">Corridor8</a>. You can follow the links below to read some of this work: 
           </p>
           <p className="bioStatementText">
             <a href="https://corridor8.co.uk/article/richard-long/" target="_blank" rel="noopener noreferrer"><em>ARTIST ROOMS: Richard Long</em>, Gallery Oldham, 26 May 2018 – 15 September 2018</a>

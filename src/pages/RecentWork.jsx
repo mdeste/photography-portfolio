@@ -14,17 +14,61 @@ function RecentWork() {
   return (
     <>
     <div className="pageContainer">
-    <img className="recentWorkImgLandscape" src={recentWork11} alt="" />
-    <img className="recentWorkImgLandscape" src={recentWork10} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork9} alt="" />
-    <img className="recentWorkImgLandscape" src={recentWork8} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork7} alt="" />
-    <img className="recentWorkImgLandscape" src={recentWork6} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork5} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork4} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork3} alt="" />
-    <img className="recentWorkImgPortrait" src={recentWork2} alt="" />
-    <img className="recentWorkImgLandscape" src={recentWork1} alt="" />
+      <img 
+      className="recentWorkImgLandscape" 
+      src={recentWork11} 
+      alt="A diptych of light shining on a stone floor between dusty wooden walls and light shining on the edge of a stone effigy" 
+      loading="lazy"/>
+      <img 
+      className="recentWorkImgLandscape" 
+      src={recentWork10} 
+      alt="The reflection of vegetation in the ripples of a disturbed, dark body of water" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork9} 
+      alt="A black-and-white landscape of three dark trees standing in a field in front of forest and moorland" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgLandscape" 
+      src={recentWork8} 
+      alt="A black-and-white landscape of three horses standing on the top of a field against a cloudy sky" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork7} 
+      alt="A person stood in an overgrown garden, taking a photograph of a dilapidated house" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgLandscape" 
+      src={recentWork6} 
+      alt="The moon shining brightly over the sea on a clear night with the lights of a distant headland on the horizon" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork5} 
+      alt="A flowering, pinkish-blue hydrangea" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork4} 
+      alt="A landscape with a dirt track leading from the foreground over a distant hill, on the apex of the hill are telephone poles" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork3} 
+      alt="The corner of a red couch and red velvet curtain, with strong sunlight illuminating and casting shadows upon it" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgPortrait" 
+      src={recentWork2} 
+      alt="A detailed close-up of the underside of a leaf with hues of red, white and blue" 
+      loading="lazy" />
+      <img 
+      className="recentWorkImgLandscape" 
+      src={recentWork1} 
+      alt="A landscape looking over a reservoir amidst the hills under a hazy blue sky, with electrical pylons leading out of frame" 
+      loading="lazy" />
     </div> 
     </>
   )
