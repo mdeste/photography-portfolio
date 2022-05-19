@@ -5,7 +5,7 @@ import FourPhotographs from './pages/FourPhotographs'
 import InteriorExterior from './pages/InteriorExterior'
 import ToDivertWater from './pages/ToDivertWater'
 import Projects from './pages/Projects'
-import WorkInProgress from './pages/WorkInProgress'
+import RecentWork from './pages/RecentWork'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<WorkInProgress />} />
+        <Route path='/' element={<RecentWork />} />
         <Route path='/*' element={<NotFound />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />

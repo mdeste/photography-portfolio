@@ -37,7 +37,7 @@ const NavLinks = (props) => {
             transition={{delay: 0.05}}
             className="navbarListItem" 
             onClick={navLink1}>
-                <p className={pathMatchRoute('/') ? 'navbarListItemNameActive' : 'navbarListItemName'} >Work In Progress</p>  
+                <p className={pathMatchRoute('/') ? 'navbarListItemNameActive' : 'navbarListItemName'} >Recent Work</p>  
             </motion.li>
             <motion.li 
             initial={animateFrom}

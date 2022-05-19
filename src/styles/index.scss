@@ -202,6 +202,32 @@ label {
     }
 }
 
+// images
+
+.recentWorkImgLandscape {
+    height: auto;
+    margin-bottom: 2.5em;
+    width: 50%;
+}
+
+.recentWorkImgPortrait {
+    height: auto;
+    margin-bottom: 2.5em;
+    width: 30%;
+}
+
+@media (max-width: $breakpointMobile) {
+    .recentWorkImgLandscape {
+        height: auto;
+        width: 80%;
+    }
+
+    .recentWorkImgPortrait {
+        height: auto;
+        width: 80%;
+    }
+}
+
 // pages
 .pageContainer {
     align-items: center;
