@@ -11,6 +11,7 @@ $textColorPrimary: #f2f2f2;
 
 // breakpoints
 $breakpointMobile: 900px;
+$breakpointSmallScreen: 1300px;
 
 // scrollbar
 // width
@@ -203,7 +204,6 @@ label {
 }
 
 // images
-
 .recentWorkImgLandscape {
     height: auto;
     margin-bottom: 2.5em;
@@ -292,4 +292,40 @@ label {
         }
     }
 
+    .projectWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        justify-content: space-evenly;
+
+        .imgWrapper {
+            cursor: pointer;
+            margin-bottom: 3em;
+            width: 28%;
+
+            .projectsImg {
+                width: 100%;
+
+                &:hover ~ .captionWrapper {
+                    filter: blur(1px);
+                }
+            }
+    
+            .captionWrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 99%;
+    
+                .imgCaption {
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        @media (max-width: $breakpointSmallScreen) {
+            .imgWrapper {
+                width: 85%;
+            }
+        }
+    }
 }
