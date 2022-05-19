@@ -24,6 +24,10 @@ function InteriorExterior() {
           <p className="shortBioDetailsText">
             Curated by Sophie Fuce
           </p>
+          <br></br>
+          <p className="shortBioDetailsText">
+            Installation photographs by Sophie Fuce and Tom Ireland / Courtesy of UNIT Projects
+          </p>
         </div>
         <div className="bioStatement">
           <h1 className="statementTitle">Press Release</h1>
