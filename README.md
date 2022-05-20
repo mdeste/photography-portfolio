@@ -7,7 +7,7 @@ The hamburger menu is a custom SVG built in Affinity Designer and animated using
 
 ## Demo 
 ### Responsive, Mobile-First Design
-As I usually do, I began with a mobile-first design. The previous iteration of my site, built only a few months after I had begun to learn front-end development, was a difficult-to-navigate experience on mobile devices. The new version of the site is much more user and browser-friendly experience:
+As I usually do, I began with a mobile-first design. The previous iteration of my site, built only a few months after I had begun to learn front-end development, was a difficult-to-navigate experience on mobile devices. The new version of the site is a much more user and browser-friendly experience:
 
 ![Mobile Devices](/src/assets/readme%20gifs/mobileExample.gif)
 
