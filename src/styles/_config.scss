@@ -1,0 +1,38 @@
+// fonts
+@font-face {
+    font-family: "ApfelGrotezk-Regular";
+    src: url("/src/assets/typefaces/ApfelGrotezk-Regular.woff2") format("woff2");
+}
+
+// variables
+// color
+$backgroundColor: #111111;
+$textColorPrimary: #f2f2f2;
+
+// scrollbar size
+$scrollbarSize: 0.2em;
+
+// breakpoints
+$breakpointMobile: 900px;
+$breakpointSmallScreen: 1300px;
+
+
+// scrollbars
+@mixin scrollbars($scrollbarSize, $textColorPrimary, $backgroundColor: mix($textColorPrimary, white,  50%)) {
+    &::-webkit-scrollbar {
+      width:  $scrollbarSize;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $textColorPrimary;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $backgroundColor;
+    }
+  
+    & {
+      scrollbar-face-color: $textColorPrimary;
+      scrollbar-track-color: $backgroundColor;
+    }
+  }

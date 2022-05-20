@@ -1,41 +1,8 @@
-// fonts
-@font-face {
-    font-family: "ApfelGrotezk-Regular";
-    src: url("/src/assets/typefaces/ApfelGrotezk-Regular.woff2") format("woff2");
-}
-
-// variables
-// color
-$backgroundColor: #111111;
-$textColorPrimary: #f2f2f2;
-
-// breakpoints
-$breakpointMobile: 900px;
-$breakpointSmallScreen: 1300px;
-
-// scrollbar
-// width
-::-webkit-scrollbar {
-    width: 0.2em;
-}
-
-// track
-::-webkit-scrollbar-track {
-    background: #111111;
-}
-
-// handle
-::-webkit-scrollbar-thumb {
-    background: #ffffff;
-}
-
-// handle hover
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 1);
-}
+@import 'config';
 
 // body, html styling
 body {
+    @include scrollbars($scrollbarSize, $textColorPrimary, $backgroundColor);
     background: $backgroundColor;
     color: $textColorPrimary;
     font-family: ApfelGrotezk-Regular;
